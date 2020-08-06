@@ -1,0 +1,85 @@
+*{
+	margin:0;
+	padding:0;
+}
+header{
+	background-color:#f0f0f0;
+	padding: 1%;
+}
+nav{
+	width:75%;
+	margin:20px auto;
+	position: sticky;
+	align-items: : center;
+	display: flex;
+}
+nav a{
+	color:#6e6a69;
+}
+nav a:hover{
+	color:#000000;
+}
+.namelogo a{
+	font-size:25px;
+	flex-basis: 20%;
+	text-decoration:None;
+}
+.navigation{
+	flex:1;
+	text-align: right;
+	margin: 0 50px;
+}
+.navigation ul li{
+	display: inline-block;;
+	list-style: :none;
+	margin:0 10px;
+}
+.navigation ul li a{
+	font-size: 25px;
+	text-decoration: None;
+}
+img{
+	float:right;
+	border:solid black;
+	width:150px;
+	margin:0 auto;
+	display:inline-block;
+}
+.info{
+	font-size:20px;
+	border:solid black;
+	padding: 20px;
+	margin:1%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.skills-arrange{
+	font-size:15px;
+	width:45%;
+	float:left;
+	display: inline-block;
+	margin:2%;
+	margin-top: 1px;
+}
+.skills-arrange li{
+	font-size:18px;
+	list-style: none;
+}
+.roles{
+	display: inline-block;
+}
+.footer{
+	margin:50px;
+	text-align: center;
+	padding: 1%
+}
+.footer a{
+	display: :inline-block;
+	text-decoration: none;
+	width:1%;
+	margin: 1%;
+}
+.footer a i{
+	font-size:40px;
+	color:#000000;
+}

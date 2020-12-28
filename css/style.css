@@ -2,6 +2,11 @@
 	margin:0;
 	padding:0;
 }
+/*body{
+	background-image: url("../images/Miles.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}*/
 header{
 	background-color:#f0f0f0;
 	padding: 1%;
@@ -37,6 +42,36 @@ nav a:hover{
 .navigation ul li a{
 	font-size: 25px;
 	text-decoration: None;
+}
+#magic button{
+	border:.1rem solid black;
+	background: none;
+	display: block;
+	padding: 1% 2%;
+	margin: 0 auto;
+	margin-top: 1%;
+	align-items: center;
+}
+#magic button:hover{
+	background-color: #aaabad;
+}
+.icons{
+	margin: 2% 10%;
+}
+.icons div{
+	border-radius: 2px;
+	border: .1rem solid black;
+	padding: 6%;
+	margin: 1.5%;
+	display: inline-block;
+	background:none;
+}
+.icons div:hover{
+	background-color: #aaabad;
+}
+.icons div a{
+	color: black;
+	text-decoration: none;
 }
 img{
 	float:right;

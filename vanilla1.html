@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF=8">
+	<title>Likhith</title>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="css/vanillajs/musicalKeyboard.css">
+</head>
+<body>
+	<header class="homenav">
+		<a href="index.html"><i class="fas fa-home"></i></a>
+		<h3>VanillaJS Challenge #1</h3>
+	</header>
+
+	<div class="topKeys">
+		<div data-key="81" class="key">
+			<kbd>Q</kbd>
+			<span class="sound">Q</span>
+		</div>
+		<div data-key="87" class="key">
+			<kbd>W</kbd>
+			<span class="sound">W</span>
+		</div>
+		<div data-key="69" class="key">
+			<kbd>E</kbd>
+			<span class="sound">E</span>
+		</div>
+		<div data-key="82" class="key">
+			<kbd>R</kbd>
+			<span class="sound">R</span>
+		</div>
+		<div data-key="84" class="key">
+			<kbd>T</kbd>
+			<span class="sound">T</span>
+		</div>
+		<div data-key="89" class="key">
+			<kbd>Y</kbd>
+			<span class="sound">Y</span>
+		</div>
+		<div data-key="85" class="key">
+			<kbd>U</kbd>
+			<span class="sound">U</span>
+		</div>
+		<div data-key="73" class="key">
+			<kbd>I</kbd>
+			<span class="sound">I</span>
+		</div>
+		<div data-key="79" class="key">
+			<kbd>O</kbd>
+			<span class="sound">O</span>
+		</div>
+		<div data-key="80" class="key">
+			<kbd>P</kbd>
+			<span class="sound">P</span>
+		</div>
+	</div>
+	<div class="keys">
+		<div data-key="65" class="key">
+			<kbd>A</kbd>
+			<span class="sound">clap</span>
+		</div>
+		<div data-key="83" class="key">
+		    <kbd>S</kbd>
+		    <span class="sound">hihat</span>
+		</div>
+	    <div data-key="68" class="key">
+	    	<kbd>D</kbd>
+	        <span class="sound">kick</span>
+	    </div>
+	    <div data-key="70" class="key">
+	        <kbd>F</kbd>
+	        <span class="sound">openhat</span>
+	    </div>
+	    <div data-key="71" class="key">
+	        <kbd>G</kbd>
+	        <span class="sound">boom</span>
+	    </div>
+	    <div data-key="72" class="key">
+	        <kbd>H</kbd>
+	        <span class="sound">ride</span>
+	    </div>
+	    <div data-key="74" class="key">
+	        <kbd>J</kbd>
+	        <span class="sound">snare</span>
+	    </div>
+	    <div data-key="75" class="key">
+	        <kbd>K</kbd>
+	        <span class="sound">tom</span>
+	    </div>
+	    <div data-key="76" class="key">
+	        <kbd>L</kbd>
+	        <span class="sound">tink</span>
+	    </div>
+	</div>
+	<div class="lowKeys">
+		<div data-key="90" class="key">
+	        <kbd>Z</kbd>
+	        <span class="sound">tink</span>
+	    </div>
+	    <div data-key="88" class="key">
+	        <kbd>X</kbd>
+	        <span class="sound">tink</span>
+	    </div>
+	    <div data-key="67" class="key">
+	        <kbd>C</kbd>
+	        <span class="sound">tink</span>
+	    </div>
+	    <div data-key="86" class="key">
+	        <kbd>V</kbd>
+	        <span class="sound">tink</span>
+	    </div>
+	    <div data-key="66" class="key">
+	        <kbd>B</kbd>
+	        <span class="sound">tink</span>
+	    </div>
+	    <div data-key="78" class="key">
+	        <kbd>N</kbd>
+	        <span class="sound">tink</span>
+	    </div>
+	    <div data-key="77" class="key">
+	        <kbd>M</kbd>
+	        <span class="sound">tink</span>
+	    </div>
+	</div>
+	<audio data-key="65" src="sounds/a.wav"></audio>
+	<audio data-key="83" src="sounds/s.wav"></audio>
+	<audio data-key="68" src="sounds/d.wav"></audio>
+	<audio data-key="70" src="sounds/f.wav"></audio>
+	<audio data-key="71" src="sounds/g.wav"></audio>
+	<audio data-key="72" src="sounds/h.wav"></audio>
+	<audio data-key="74" src="sounds/j.wav"></audio>
+	<audio data-key="75" src="sounds/k.wav"></audio>
+	<audio data-key="76" src="sounds/l.wav"></audio>
+
+	<audio data-key="81" src="sounds/q.wav"></audio>
+	<audio data-key="87" src="sounds/w.wav"></audio>
+	<audio data-key="69" src="sounds/e.wav"></audio>
+	<audio data-key="82" src="sounds/r.wav"></audio>
+	<audio data-key="84" src="sounds/t.wav"></audio>
+	<audio data-key="89" src="sounds/y.wav"></audio>
+	<audio data-key="85" src="sounds/u.wav"></audio>
+	<audio data-key="73" src="sounds/i.wav"></audio>
+	<audio data-key="79" src="sounds/o.wav"></audio>
+	<audio data-key="80" src="sounds/p.wav"></audio>
+
+	<audio data-key="90" src="sounds/q.wav"></audio>
+	<audio data-key="88" src="sounds/w.wav"></audio>
+	<audio data-key="67" src="sounds/e.wav"></audio>
+	<audio data-key="86" src="sounds/r.wav"></audio>
+	<audio data-key="66" src="sounds/t.wav"></audio>
+	<audio data-key="78" src="sounds/t.wav"></audio>
+	<audio data-key="77" src="sounds/y.wav"></audio>
+
+<script type="text/javascript">
+	
+	function playSound(e){
+		const audio=document.querySelector(`audio[data-key="${e.keyCode}"]`)
+		const key=document.querySelector(`.key[data-key="${e.keyCode}"]`)
+		if(!audio) return;   //to exclude non-audio buttons
+		audio.play();
+		audio.currentTime=0; //rewind to beginning 
+		key.classList.add('playing');
+	}
+
+	function removeTransition(e){
+		if(e.propertyName !=='transform') return; //skip if it is not a transform
+		console.log(this);
+		this.classList.remove("playing");
+	}
+
+	const keys=document.querySelectorAll(".key");
+	keys.forEach(key => key.addEventListener('transitionend',removeTransition));
+	window.addEventListener("keydown",playSound);
+</script>
+</body>
+</html>

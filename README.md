@@ -1,4 +1,4 @@
-## MY PORTFOLIO WEBSITE 
+## MY PORTFOLIO WEBSITE
 
 I am going to (planning to) add a bunch of decent and surprising features in my website.
 Currently i am working on VanillaJS challenge.
